@@ -6,7 +6,74 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Daily document</title>
-  <link rel="stylesheet" href="../res/style.css">
+<!--   <link rel="stylesheet" href="../res/style.css"> -->
+  <style>
+    html {
+      height: 100%;
+      background-color: black;
+      margin: 0;
+      padding: 0;
+
+      font-size: 0.7cm;
+    }
+    body {
+      margin: 1em;
+      padding: 0;
+      color: ivory;
+
+      font-size: 1rem;
+    }
+
+    div.theborder {
+      box-shadow: 8px 8px 5px;
+    }
+    .hgl {font-weight: bold; color: navajowhite; font-size: 1.2rem; }
+    #top {text-align: center; text-shadow: 2px 2px navajowhite;
+          border-bottom: solid 2px ivory;
+          padding-bottom: 0.6rem; max-width: 50%; margin: auto;}
+    .theborder {border: solid 2px ivory; margin: 1em; padding: 1em;}
+
+    .mitem {color: navajowhite; margin-left: 1em; font-style: italic; font-size: 1.2rem;
+            /* tooltip properties: */
+            /* !DBG */
+/*            border: solid blue 1px;*/
+            }
+
+    /* Styl tooltipa */
+    .tooltip {
+      position: relative;
+      display: block;
+    }
+
+    .tooltip::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: 125%;  /* shift/position to the right */
+      left: 33%;  /* shift/position up */
+      transform: translateX(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      min-width: 10em;
+    }
+
+    .tooltip:hover::after {
+      opacity: 1;
+    }
+  </style>
+  <script>
+    
+    const memorylane = {  /* with 'const' only one variable, when more: without (discouraged) */
+        "1": {"item": "Ex uno sequitur alterum",
+              "def": "From one, the other follows"},
+        "2": {"item": "ἐξ ἑνὸς ἕτερον",
+              "def": "One leads to another (lit. from one another)"}
+    }
+  </script>
 </head>
 <body>
   <h1 id="top">{ymd}</h1>
@@ -26,7 +93,7 @@ days in the year.</p>
 
   </div>
 
-  <script src="../res/memory.json"></script>
+<!--   <script src="../res/memory.json"></script> -->
 
   <script>
 
