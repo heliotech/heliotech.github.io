@@ -14,6 +14,10 @@ html {
       font-size: 1rem;
     }
 
+    h1 {color: lightskyblue; font-family: Arial, sans-serif;
+        margin: auto; margin-bottom: 1em; padding-bottom: 0.2em; text-align: center;
+        width: 60%; border-bottom: solid 2px lightskyblue;}
+
     div.theborder {
       box-shadow: 8px 8px 5px;
     }
@@ -54,3 +58,6 @@ html {
     .tooltip:hover::after {
       opacity: 1;
     }
+
+    /* Classes - fonts */
+    .monospace {color: beige; font-family: monospace; }
