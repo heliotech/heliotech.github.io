@@ -33,11 +33,11 @@
           padding-bottom: 0.6rem; max-width: 50%; margin: auto;}
     .theborder {border: solid 3px silver; margin: 1em; padding: 1em;}
 
-    .mitem {color: navajowhite; margin-left: 1em; font-style: italic; font-size: 1.2rem;
-            /* tooltip properties: */
-            /* !DBG */
-/*            border: solid blue 1px;*/
-            }
+    .mitem {color: navajowhite; margin-left: 1em; font-style: italic; font-size: 1.2rem;}
+
+    .backlink {color: navy; }
+    div a {color: navajowhite; position: absolute; bottom: 0; right: 0.5em;
+           text-decoration: none;}
 
     /* Styl tooltipa */
     .tooltip {
@@ -86,7 +86,7 @@
 days in the year.</p>
   </div>
 
-<div class="theborder">
+<div class="theborder" style="position: relative">
 
   <div id="memorylanediv">
     Commit to memory:
@@ -180,6 +180,9 @@ days in the year.</p>
     memorylaneElement.innerHTML = contents;
 
   </script>
+
+  <div id="backlink"><a href="https://heliotech.github.io/">←</a></div>
+
 </div>
 
 </body>
