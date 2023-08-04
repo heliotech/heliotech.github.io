@@ -19,7 +19,7 @@
     body {
       margin: 1em;
       padding: 0;
-      color: silver;
+      color: ivory;
 
       font-size: 1rem;
     }
@@ -29,15 +29,15 @@
     }
     .hgl {font-weight: bold; color: navajowhite; font-size: 1.2rem; }
     #top {text-align: center; text-shadow: 2px 2px navajowhite;
-          border-bottom: solid 2px silver;
+          border-bottom: solid 2px ivory;
           padding-bottom: 0.6rem; max-width: 50%; margin: auto;}
-    .theborder {border: solid 3px silver; margin: 1em; padding: 1em;}
+    .theborder {border: solid 2px ivory; margin: 1em; padding: 1em;}
 
-    .mitem {color: navajowhite; margin-left: 1em; font-style: italic; font-size: 1.2rem;}
-
-    .backlink {color: navy; }
-    div a {color: navajowhite; position: absolute; bottom: 0; right: 0.5em;
-           text-decoration: none;}
+    .mitem {color: navajowhite; margin-left: 1em; font-style: italic; font-size: 1.2rem;
+            /* tooltip properties: */
+            /* !DBG */
+/*            border: solid blue 1px;*/
+            }
 
     /* Styl tooltipa */
     .tooltip {
@@ -86,7 +86,7 @@
 days in the year.</p>
   </div>
 
-<div class="theborder" style="position: relative">
+<div class="theborder">
 
   <div id="memorylanediv">
     Commit to memory:
@@ -180,9 +180,6 @@ days in the year.</p>
     memorylaneElement.innerHTML = contents;
 
   </script>
-
-  <div id="backlink"><a href="https://heliotech.github.io/" title="heliotech.github.io">←</a></div>
-
 </div>
 
 </body>
